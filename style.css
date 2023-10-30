@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--four-color);
+
+
+}
+
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+:root {
+
+  --main-color: #414444;
+  --scend--color: #fff;
+  --three-color: #5C4500;
+  --five-color: hsl(0deg 3% 58% / 28%);
+  --border-color: hsl(0, 0%, 94%);
+}
+
+
+/*section 1*/
+
+.mainbanner{
+  display: flex;
+  position: relative;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+}
+
+
+.banner2 {
+  text-align: center;
+  padding-top: 168px;
+  width: 36%;
+
+}
+.banner2 h1{
+  color: var(--main-color);
+font-size: 42px;
+font-weight: 700;
+}
+.banner2 p{
+
+  color: #6B6B6B;
+text-align: center;
+font-size: 30px;
+font-weight: 500;
+padding:40px 0;
+}
+.button1 a {
+  text-decoration: none;
+  position: absolute;
+  top: 51%;
+  left: 46%;
+  color: #5C4500;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.button1 img {
+  top: -95px;
+  position: relative;
+}
+
+/* end section 1 */
+
+/*section 2*/
+.sec2 .container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+ .sec2 div h4{
+  color: var(--main-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+margin-top: 20px;
+}
+
+.sec2 div p{
+color: var(--main-color);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.box {
+  margin-top: 20px;
+}
+.sec2 .imagesvg:hover .mysvg path {
+  stroke: var(--scend--color); 
+}
+.sec2 .imagesvg {
+  box-shadow: 2px 6px 10px #e2d5d5;
+  background-color: var(--scend--color);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 22%;
+
+}
+.sec2 .one:hover{
+  background-color:#ee9322;
+
+}
+.sec2 .two:hover{
+  background-color:#E9B824;
+
+}
+.sec2 .three:hover{
+  background-color:#D83F31;
+
+}
+.sec2 .four:hover{
+  background-color:#219C90;
+
+}
+
+@media(max-width:664px){
+.sec2 .container {
+    flex-direction: column-reverse;
+}
+.box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sec2 .imagesvg{
+  left:0
+}
+}
+/* end section 2 */
+
+/*section 3*/
+
+.sec3{
+  width: 100%;
+  max-width: 100%;
+}
+.sec3 .container{
+  position: relative;
+display: flex;
+justify-content:flex-end
+/*
+flex-wrap: wrap;
+flex-direction: column-reverse;*/
+
+}
+
+
+.boximg{
+  width: 100%;
+}
+.box1{
+  position: absolute;
+  width: 200px;
+  top: 45%;
+  left: 29%;
+}
+.box2 {
+  position: absolute;
+  top: 48%;
+  width: 200px;
+  right: 30%;
+}
+
+ h3.titlebox1{
+  color: var(--three-color);
+
+}
+h3.titlebox2{
+color: var(--scend--color);
+  
+}
+.imgbox2{
+  border: 2px solid red;
+}
+.background1sec3 div img,
+.background2sec3 div img{
+  width: 100%
+  
+}
+/* end section 3*/
+/* section 4 */
+section.products{
+  padding: 100px 0;
+}
+
+section.products .container{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 9%;
+}
+.card-product {
+  width: 283px;
+}
+.content-product {
+  text-align: end;
+}
+section.products .container .content-product span{
+  color: #219C90;
+font-size: 12px;
+}
+section.products .container .content-product h4{
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+section.products .container .content-product .price {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+section.products .container .content-product .price h5{
+  color: #D83F31;
+  text-align: right;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; 
+  margin-left: 5px;
+}
+section.products .container .content-product .price h6{
+  color: #A5A5A5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  text-decoration-line: strikethrough;
+}
+
+
+
